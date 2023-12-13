@@ -1,0 +1,639 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+<meta name="author" content="SemiColonWeb">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&family=Nunito:wght@900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="hover.css">
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="css/font-icons.css">
+<link rel="stylesheet" href="one-page/css/et-line.css">
+
+<link rel="stylesheet" href="css/swiper.css">
+
+<link rel="stylesheet" href="one-page/onepage.css">
+
+<link rel="stylesheet" href="css/custom.css">
+<meta name="viewport" content="width=768">
+<title>TetraX Solutions | Unlocking The Digital World</title>
+<style>
+		.slider-text {
+			font-size: 6rem;
+			font-family: 'Nunito', sans-serif;
+			line-height: 1;
+		}
+
+		@media (max-width: 991.98px) {
+			.slider-text {
+				font-size: 7vw;
+			}
+		}
+
+		.secondary-color { background: rgb(224,213,209) !important; }
+
+
+		.prx {
+			width: 600px;
+			/* padding-left: 500px; */
+			padding-bottom: 200px;
+		}
+		
+		.vertical-middle{
+			padding-left: 800px;
+		}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #1abc9c;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.hover-underline-animation::after{
+  
+  transform: scaleX(0);
+}
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+}
+.hover-underline-animation:hover::after {
+  
+  transform-origin: bottom left;
+}
+
+
+
+
+
+
+.menu-item.current > .menu-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #1abc9c;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  transform: scaleX(1); 
+}
+
+.oc-item{
+	width: 80px;
+}
+
+.column#sepia img {
+            -webkit-filter: sepia(100%);
+            filter: sepia(50%);
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+        }
+        .column#sepia:hover img {
+            -webkit-filter: sepia(0);
+            filter: sepia(0);
+        }
+		.column#sepia img {
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+        }
+        .column#sepia:hover img {
+            transform: scale(1.1); /* Increase the value to zoom in more */
+        }
+		.hover-icon {
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.hover-icon:hover {
+  transform: scale(1.1); /* Scale up the icon on hover */
+  opacity: 0.7; /* Reduce opacity on hover */
+}
+
+/* Add the styles for the preloader animation here */
+/* ... Existing styles ... */
+
+.preloader {
+    position: absolute;
+    width: 102px;
+    height: 102px;
+    left: 50%;
+    top: 50%;
+    min-height: 102px;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.preloader .small-circle {
+    stroke-dasharray: 210;
+    stroke-dashoffset: 210;
+    transform-origin: 50%;
+    animation: 1s draw-small infinite alternate;
+}
+
+/* ... Other styles ... */
+
+
+	</style>
+</head>
+<body class="stretched">
+<!-- Add the preloader code here -->
+<div class="preloader">
+    <svg viewBox="0 0 102 102" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="big-circle" d="M101 51C101 78.6142 78.6142 101 51 101C23.3858 101 1 78.6142 1 51" stroke="#252525" stroke-width="2"/>
+        <path class="small-circle" d="M91 51C91 28.9086 73.0914 11 51 11C28.9086 11 11 28.9086 11 51" stroke="#252525" stroke-width="2"/>
+    </svg>
+</div>
+
+<div id="wrapper">
+
+<header id="header" class="full-header transparent-header border-full-header header-size-custom" data-sticky-shrink="false" data-sticky-class="secondary-color">
+<div id="header-wrap">
+<div class="container">
+<div class="header-row">
+
+<div id="logo">
+<a href="index.html">
+<img class="logo-default" src="logo - transpernt1.png" alt="Canvas Logo">
+<img class="logo-dark" src="logo - transpernt1.png"Canvas Logo">
+</a>
+</div>
+<div class="primary-menu-trigger">
+<button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
+<span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
+</button>
+</div>
+
+<nav class="primary-menu">
+<ul class="one-page-menu menu-container" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
+<li class="menu-item">
+<a href="#" class="menu-link hover-underline-animation" data-href="#wrapper"><div>Home</div></a>
+</li>
+<li class="menu-item">
+<a href="#" class="menu-link hover-underline-animation" data-href="#section-about"><div>About</div></a>
+</li>
+<li class="menu-item">
+<a href="#" class="menu-link hover-underline-animation" data-href="#section-works"><div>Works</div></a>
+</li>
+<li class="menu-item">
+<a href="#" class="menu-link hover-underline-animation" data-href="#section-services"><div>Services</div></a>
+</li>
+<li class="menu-item">
+<a href="#" class="menu-link hover-underline-animation" data-href="#section-blog"><div>Blog</div></a>
+</li>
+<li class="menu-item">
+<a href="#footer"  data-easing="easeInOutExpo" data-speed="1250" class="menu-link hover-underline-animation" data-href="#footer" id="contact-us-link" ><div>Contact</div></a>
+
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="header-wrap-clone"></div>
+</header>
+
+<section id="slider" class="slider-element min-vh-100 include-header"style="height: 950px" >
+<div class="w-100 h-100 position-absolute" style="background: url('one-page/images/page/parallax/parallax-1.png') center center no-repeat; background-size: cover;" data-0-top="top: 0px" data-900="top: 300px"></div>
+<div class="w-100 h-100 position-absolute" style="background: url('one-page/images/page/parallax/parallax-2.png') center center no-repeat; background-size: cover; z-index: 8" data-0="top:0px" data-900="top: 140px"></div>
+<div class="w-100 h-100 position-absolute" class="" style="background: url('one-page/images/page/parallax/parallax-3.png') center bottom no-repeat; background-size: cover; z-index: 9"></div>
+<div class="container">
+<div class="vertical-middle">
+	<img class="prx" src="logo - transpernt1.png">
+<!--<h2 class="slider-text text-uppercase text-end fw-bolder" data-0="margin-top: -300px; opacity: 1" data-450="margin-top: 0px; opacity: .4">Parallax<br>Adventure</h2>-->
+</div>
+</div>
+</section>
+
+<section id="content">
+<div class="content-wrap py-0">
+<div id="section-about" class="text-center page-section pt-0 secondary-color">
+<div class="container">
+<h2 class="mx-auto mb-5 font-body" style="max-width: 700px; font-size: 40px;">
+	Welcome to TetraX – Unlocking the Digital World</h2>
+<p class="lead mx-auto mb-5" style="max-width: 800px;">At TetraX, we're your partners in harnessing the power of the digital world. We specialize in a wide array of services to empower your online presence and take your business to new heights.</p>
+<p class="mb-5" style="font-size: 16px;"><a href="#" data-scrollto="#section-services" data-easing="easeInOutExpo" data-speed="1250" data-offset="70" class="more-link">Learn more <i class="uil uil-angle-right-b"></i></a></p>
+<div class="clear"></div>
+<div class="row mt-6 mx-auto" style="max-width: 1000px;">
+<div class="col-md-3 mb-5">
+<div class="team">
+<div class="team-image">
+<img src="vineeth.jpg" alt="John Doe">
+<div class="bg-overlay">
+<div class="bg-overlay-content align-items-end" data-hover-animate="fadeIn" data-hover-speed="400">
+
+	<a href="#" class="social-icon bg-transparent h-bg-instagram" title="Instagram">
+		<i class="bi-instagram"></i>
+		<i class="bi-instagram"></i>
+		</a>
+</div>
+<div class="bg-overlay-bg" data-hover-animate="fadeIn" data-hover-speed="400"></div>
+</div>
+</div>
+<div class="team-desc team-desc-bg">
+<div class="team-title"><h4>Vineed Vijay CH</h4><span>Founder</span></div>
+</div>
+</div>
+</div>
+<div class="col-md-3 mb-5">
+<div class="team">
+<div class="team-image">
+<img src="vipi.jpg" alt="Josh Clark">
+<div class="bg-overlay">
+<div class="bg-overlay-content align-items-end" data-hover-animate="fadeIn" data-hover-speed="400">
+
+	<a href="#" class="social-icon bg-transparent h-bg-instagram" title="Instagram">
+		<i class="bi-instagram"></i>
+		<i class="bi-instagram"></i>
+		</a>
+</div>
+<div class="bg-overlay-bg" data-hover-animate="fadeIn" data-hover-speed="400"></div>
+</div>
+</div>
+<div class="team-desc team-desc-bg">
+<div class="team-title"><h4>Vipin KB</h4><span>Founder</span></div>
+</div>
+</div>
+</div>
+
+<div class="col-md-3 mb-5">
+	<div class="team">
+	<div class="team-image">
+	<img src="pakkaran.jpg" alt="Josh Clark">
+	<div class="bg-overlay">
+	<div class="bg-overlay-content align-items-end" data-hover-animate="fadeIn" data-hover-speed="400">
+	
+<a href="#" class="social-icon bg-transparent h-bg-instagram" title="Instagram">
+	<i class="bi-instagram"></i>
+	<i class="bi-instagram"></i>
+	</a>
+	</div>
+	<div class="bg-overlay-bg" data-hover-animate="fadeIn" data-hover-speed="400"></div>
+	</div>
+	</div>
+	<div class="team-desc team-desc-bg">
+	<div class="team-title"><h4>Jishnu Bhaskar</h4><span>Founder</span></div>
+	</div>
+	</div>
+	</div>
+
+<div class="col-md-3 mb-5">
+<div class="team">
+<div class="team-image">
+<img src="achuetan.jpg" alt="Mary Jane">
+<div class="bg-overlay">
+<div class="bg-overlay-content align-items-end" data-hover-animate="fadeIn" data-hover-speed="400">
+
+<a href="#" class="social-icon bg-transparent h-bg-instagram" title="Instagram">
+<i class="bi-instagram"></i>
+<i class="bi-instagram"></i>
+</a>
+</div>
+<div class="bg-overlay-bg" data-hover-animate="fadeIn" data-hover-speed="400"></div>
+</div>
+</div>
+<div class="team-desc team-desc-bg">
+<div class="team-title"><h4>Akshay G</h4><span>Founder</span></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="section-works" class="page-section pt-0">
+<div class="section m-0">
+<div class="container">
+<div class="mx-auto text-center" style="max-width: 900px;">
+<h2 class="mb-0 fw-light ls-1">
+
+	Take a moment to explore some of our recent completed projects. Each one is a testament to our commitment to innovation, aesthetics, and functionality. We believe in pushing the boundaries of what's possible, and our work reflects that spirit.</h2>
+</div>
+</div>
+</div>
+
+<!-- ceraousal -->
+
+
+
+
+<div class="mt-5 text-center"><a href="viewmore.html" class="button button-border button-circle fw-semibold">View More Projects</a></div>
+</div>
+<div id="section-services" class="page-section pt-0">
+<div class="section m-0">
+<div class="container">
+<div class="mx-auto text-center" style="max-width: 900px;">
+<h2 class="mb-0 fw-light ls-1">We enjoy working on the Services &amp; Products we provide as much as you need them. This help us in delivering your Goals easily. Browse through the wide range of services we provide.</h2>
+</div>
+</div>
+</div>
+<div class="row align-items-stretch">
+<div class="col-lg- d-none d-md-block" style="background: url('images/services/main-bg.jpg') center center no-repeat; background-size: cover;"></div>
+<div class="col-lg-">
+<div class="row align-items-stretch grid-border">
+<div class="col-lg-4 col-md-6 col-padding">
+<div class="feature-box fbox-center fbox-dark fbox-plain">
+<div class="fbox-icon">
+<img src="icons8-website-development-67.png" class="hover-icon" alt="">
+</div>
+<div class="fbox-content fbox-content-sm">
+<h3>Website Development</h3>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-padding">
+<div class="feature-box fbox-center fbox-dark fbox-plain">
+<div class="fbox-icon">
+<img src="icons8-web-design-67.png" alt="">
+</div>
+<div class="fbox-content fbox-content-sm">
+<h3>Web Design</h3>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-padding">
+<div class="feature-box fbox-center fbox-dark fbox-plain">
+<div class="fbox-icon">
+<img src="icons8-mobile-apps-67.png" alt="">
+</div>
+<div class="fbox-content fbox-content-sm">
+<h3>Mobile App Developing</h3>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-padding">
+<div class="feature-box fbox-center fbox-dark fbox-plain">
+<div class="fbox-icon">
+<img src="icons8-cms-67.png" alt="">
+</div>
+<div class="fbox-content fbox-content-sm">
+<h3>CMS Application</h3>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-padding">
+<div class="feature-box fbox-center fbox-dark fbox-plain">
+<div class="fbox-icon">
+<img src="icons8-game-development-67 (1).png" alt="">
+</div>
+<div class="fbox-content fbox-content-sm">
+<h3>Game Development</h3>
+</div>
+</div>
+</div>
+<div class="col-lg-4 col-md-6 col-padding">
+<div class="feature-box fbox-center fbox-dark fbox-plain">
+<div class="fbox-icon">
+<img src="icons8-digital-marketing-67.png" alt="">
+</div>
+<div class="fbox-content fbox-content-sm">
+<h3>Digital Marketing</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section dark m-0">
+<div class="mx-auto text-center" style="max-width: 900px;">
+<h2 class="mb-0 fw-light ls-1">Like Our Services? <a href="javascript:void(0);" onclick="scrollToFooter()" class="button button-border button-circle button-light button-large my-0" id="contact-us-link" style="position: relative; top: -3px;">Contact us</a>
+</h2>
+</div>
+</div>
+<div class="section parallax scroll-detect m-0 dark" style="padding: 150px 0;">
+<img src="one-page/images/page/testimonials.jpg" class="parallax-bg">
+<div class="container">
+<div class="row justify-content-end">
+<div class="col-md-7">
+<div class="fslider testimonial testimonial-full text-center bg-transparent border-0 shadow-none p-0" data-arrows="false">
+<div class="flexslider">
+<div class="slider-wrap">
+<div class="slide">
+<p class="mb-4 fs-4 fw-light ls-1">The advance of technology is based on making it fit in so that you don't really even notice it, so it's part of everyday life.</p>
+<h4 class="h5 mb-0 fw-medium">Bill Gates</h4>
+<small class="text-muted">MicroSoft</small>
+</div>
+<div class="slide">
+<p class="mb-4 fs-4 fw-light ls-1">Any sufficiently advanced technology is indistinguishable from magic.</p>
+<h4 class="h5 mb-0 fw-medium">Arthur C.Clarke</h4>
+<small class="text-muted">British Sci-fi Author.</small>
+</div>
+<div class="slide">
+<p class="mb-4 fs-4 fw-light ls-1">The digital revolution is far more significant than the invention of writing or even of printing.</p>
+<h4 class="h5 mb-0 fw-medium">Douglas Engelbart</h4>
+<small class="text-muted">American  Innovator</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="section-blog" class="page-section">
+<h2 class="text-center text-uppercase fw-light ls-3 font-body">Access Digital Oppurtunities, Explore And Grow</h2>
+<div class="section mb-0">
+<div class="container">
+<div class="row posts-md mt-5 col-mb-50 mb-0">
+<div class="entry col-md-6">
+<div class="grid-inner row align-items-center">
+<div class="col-lg-6">
+<div class="entry-image">
+<a href="#"class="column" id="sepia"><img class="serv" src="image48.jpg" alt="Paris"></a>
+</div>
+</div>
+<div class="col-lg-6 mt-3 mt-lg-0">
+<span class="before-heading fst-normal">Web Development</span>
+<div class="entry-title text-transform-none">
+<h3 class="fw-normal">From Concept To Reality</h3>
+</div>
+<div class="entry-content">
+
+</div>
+</div>
+</div>
+</div>
+<div class="entry col-md-6">
+<div class="grid-inner row align-items-center">
+<div class="col-lg-6">
+<div class="entry-image">
+<a href="#"class="column" id="sepia"><img class="serv" src="web-design-technology-browsing-programming-concept.jpg" alt="Paris"></a>
+</div>
+</div>
+<div class="col-lg-6 mt-3 mt-lg-0">
+<span class="before-heading fst-normal">Web Design</span>
+<div class="entry-title text-transform-none">
+<h3 class="fw-normal">Crafting Beautiful Online Experience</h3>
+</div>
+<div class="entry-content">
+
+</div>
+</div>
+</div>
+</div>
+<div class="entry col-md-6">
+<div class="grid-inner row align-items-center">
+<div class="col-lg-6">
+<div class="entry-image">
+<a href="#"class="column" id="sepia"><img class="serv" src="download.jpg" alt="Paris"></a>
+</div>
+</div>
+<div class="col-lg-6 mt-3 mt-lg-0">
+<span class="before-heading fst-normal">Mobile App Development</span>
+<div class="entry-title text-transform-none">
+<h3 class="fw-normal">For Seamless Digital Experiences</h3>
+</div>
+<div class="entry-content">
+
+</div>
+</div>
+</div>
+</div>
+<div class="entry col-md-6">
+<div class="grid-inner row align-items-center">
+<div class="col-lg-6">
+<div class="entry-image">
+<a href="#"class="column" id="sepia"><img class="serv" src="CMS Website.jpg" alt="Paris"></a>
+</div>
+</div>
+<div class="col-lg-6 mt-3 mt-lg-0">
+<span class="before-heading fst-normal">CMS Application</span>
+<div class="entry-title text-transform-none">
+<h3 class="fw-normal">Powering Your Content Management</h3>
+</div>
+<div class="entry-content">
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="entry col-md-6">
+	<div class="grid-inner row align-items-center">
+	<div class="col-lg-6">
+	<div class="entry-image">
+	<a href="#"class="column" id="sepia"><img class="serv" src="digital-marketing-2.jpg.webp" alt="Paris"></a>
+	</div>
+	</div>
+	<div class="col-lg-6 mt-3 mt-lg-0">
+	<span class="before-heading fst-normal">Digital Marketing</span>
+	<div class="entry-title text-transform-none">
+	<h3 class="fw-normal">Elevate Your Brand With Digital Precision</h3>
+	</div>
+	<div class="entry-content">
+
+	</div>
+	</div>
+	</div>
+	</div>
+
+
+	<div class="entry col-md-6">
+		<div class="grid-inner row align-items-center">
+		<div class="col-lg-6">
+		<div class="entry-image">
+		<a href="#"class="column" id="sepia"><img class="serv" src="game-developme.jpeg" alt="Paris"></a>
+		</div>
+		</div>
+		<div class="col-lg-6 mt-3 mt-lg-0">
+		<span class="before-heading fst-normal">Game Development</span>
+		<div class="entry-title text-transform-none">
+		<h3 class="fw-normal">Develop Your Games With Imagination And innovation</h3>
+		</div>
+		<div class="entry-content">
+	
+		</div>
+		</div>
+		</div>
+		</div>
+
+
+
+
+
+
+
+</div>
+</div>
+</div>
+<!-- ............ -->
+<div class="container mt-6 pt-2">
+<div id="oc-clients" class="owl-carousel mt-5 image-carousel carousel-widget" data-margin="80" data-loop="true" data-nav="false" data-autoplay="2000" data-pagi="false" data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6">
+<div class="oc-item ms-5"><a href="#"><img src="icons8-website-development-67.png" alt="Clients"></a></div>
+<div class="oc-item ms-5"><a href="#"><img src="icons8-web-design-67.png" alt="Clients"></a></div>
+<div class="oc-item ms-5"><a href="#"><img src="icons8-mobile-apps-67.png" alt="Clients"></a></div>
+<div class="oc-item ms-5"><a href="#"><img src="icons8-cms-67.png" alt="Clients"></a></div>
+<div class="oc-item ms-5"><a href="#"><img src="icons8-game-development-67 (1).png" alt="Clients"></a></div>
+<div class="oc-item ms-5"><a href="#"><img src="icons8-digital-marketing-67.png" alt="Clients"></a></div>
+
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<footer id="footer" class="dark border-0">
+<div class="container text-center">
+<div class="footer-widgets-wrap">
+<div class="row mx-auto">
+
+
+<div class="col-lg">
+<div class="widget">
+<h4>Contact</h4>
+<p ><img style="max-width: 20px;" src="/icons8-mail-50.png" alt="">  tetraxsolutions@gmail.com</p>
+<p class="lead"><img style="max-width: 20px;" src="icons8-phone-50.png" alt="">  +91-8921793949<br><img style="max-width: 20px;" src="icons8-whatsapp-50.png" alt="">  +91-9526673206</p>
+<div class="d-flex justify-content-center mt-4">
+
+<a href="#" class="social-icon si-small bg-transparent h-bg-instagram" title="instagram">
+<i class="bi-instagram"></i>
+<i class="bi-instagram"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="copyrights">
+<div class="container text-center">
+Copyrights TetraX 2023 | All Rights Reserved
+</div>
+</div>
+</footer>
+</div>
+
+<div id="gotoTop" class="uil uil-angle-up"></div>
+
+<script src="js/plugins.min.js"></script>
+<script src="js/functions.bundle.js"></script>
+
+<script src="ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+<script>!SEMICOLON.Mobile.any() && skrollr.init({forceHeight: false});</script>
+
+<script>
+	window.onbeforeunload = function () {
+		window.scrollTo(0, 0);
+	};
+	</script>
+	
+  
+
+  <script>
+	function scrollToFooter() {
+		var element = document.getElementById('footer');
+		element.scrollIntoView({ behavior: 'smooth' });
+	}
+	</script>
+
+</body>
+</html>
